@@ -92,70 +92,47 @@ add_action('init', 'newspaper_builder_register_block_pattern_categories');
 
 
 
+
+
 // Initialize information content
 require_once trailingslashit(get_template_directory()) . 'inc/vendor/autoload.php';
 
 use SuperbThemesThemeInformationContent\ThemeEntryPoint;
 
-define('SUPERBTHEMES_INFO_CONTENT_TEXT_DOMAIN', "newspaper-builder");
-
 ThemeEntryPoint::init([
-	"templates" => [
-		array(
-			'name' => __("Front Page", "newspaper-builder"),
-			'frontpage' => true,
-			'required' => true,
-			'image' => 'front-page.png',
-		),
-		array(
-			'name' => __("About", "newspaper-builder"),
-			'required' => false,
-			'slug' => 'about',
-			'image' => 'about.png',
-		),
-		array(
-			'name' => __("Contact", "newspaper-builder"),
-			'required' => false,
-			'slug' => 'contact',
-			'image' => 'contact.png',
-		),
-		array(
-			'name' => __("Blog", "newspaper-builder"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'blog.png',
-		),
-		array(
-			'name' => __("Page", "newspaper-builder"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'pages.png',
-		),
-		array(
-			'name' => __("Post", "newspaper-builder"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'posts.png',
-		),
-		array(
-			'name' => __("Archives", "newspaper-builder"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'archives.png',
-		),
-		array(
-			'name' => __("Search", "newspaper-builder"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'search.png',
-		),
-		array(
-			'name' => __("404", "newspaper-builder"),
-			'template_only' => true,
-			'required' => true,
-			'image' => '404.png',
-		),
-	],
-	'theme_url' => 'https://superbthemes.com/newspaper-builder/',
-	'demo_url' => 'https://superbthemes.com/demo/newspaper-builder/'
+    'type' => 'block', // block / classic
+    'theme_url' => 'https://superbthemes.com/newspaper-builder/',
+    'demo_url' => 'https://superbthemes.com/demo/newspaper-builder/',
+    'features' => array(
+    	array(
+    		'title' => __("Theme Designer", "newspaper-builder"),
+    		'icon' => "lego-duotone.webp",
+    		'description' => __("Choose from over 300 designs for footers, headers, landing pages & all other theme parts.", "newspaper-builder")
+    	),
+    	   	array(
+    		'title' => __("Editor Enhancements", "newspaper-builder"),
+    		'icon' => "1-1.png",
+    		'description' => __("Enhanced editor experience, grid systems, improved block control and much more.", "newspaper-builder")
+    	),
+    	array(
+    		'title' => __("Custom CSS", "newspaper-builder"),
+    		'icon' => "2-1.png",
+    		'description' => __("Add custom CSS with syntax highlight, custom display settings, and minified output.", "newspaper-builder")
+    	),
+    	array(
+    		'title' => __("Animations", "newspaper-builder"),
+    		'icon' => "wave-triangle-duotone.webp",
+    		'description' => __("Animate any element on your website with one click. Choose from over 50+ animations.", "newspaper-builder")
+    	),
+    	array(
+    		'title' => __("WooCommerce Integration", "newspaper-builder"),
+    		'icon' => "shopping-cart-duotone.webp",
+    		'description' => __("Choose from over 100 unique WooCommerce designs for your e-commerce store.", "newspaper-builder")
+    	),
+    	array(
+    		'title' => __("Responsive Controls", "newspaper-builder"),
+    		'icon' => "arrows-out-line-horizontal-duotone.webp",
+    		'description' => __("Make any theme mobile-friendly with SuperbThemes responsive controls.", "newspaper-builder")
+    	)
+    )
 ]);
