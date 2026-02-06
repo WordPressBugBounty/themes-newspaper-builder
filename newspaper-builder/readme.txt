@@ -2,9 +2,9 @@
 
 Contributors: SuperbAddons
 Requires at least: 4.0  
-Tested up to: 6.4
-Stable tag: 1.7
-Version: 1.7
+Tested up to: 6.9
+Stable tag: 2.9
+Version: 2.9
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: theme-options, threaded-comments, translation-ready, sticky-post, footer-widgets, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-image-header, featured-images, flexible-header, right-sidebar, one-column, two-columns, three-columns, buddypress, full-width-template, e-commerce, blog, news
@@ -17,7 +17,7 @@ Whether you're a blogger, reviewer, journalist, or magazine editor, this theme i
 
 
 ## Copyright
-Newspaper Builder WordPress Theme, Copyright 2023 SuperbAddons
+Newspaper Builder WordPress Theme, Copyright 20236 SuperbAddons
 Newspaper Builder is distributed under the terms of the GNU GPL
 
 Newspaper Builder bundles the following third-party resources:
